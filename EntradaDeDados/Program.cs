@@ -21,6 +21,28 @@ namespace Course
             // Saída usando interpolação de strings
             Console.WriteLine($"Olá {nome}, você tem {idade} anos. Sua frase é: \"{frase}\"");
 
+
+            // Split , vetor de string separadas por espaço
+            Console.WriteLine("Agora vamos fazer Split");
+            Console.WriteLine("Digite 3 futras que voce gosta:");
+            string frutas = Console.ReadLine();
+            
+            if (string.IsNullOrEmpty(frutas))
+            {
+                Console.WriteLine("Digite 3 futras que voce gosta:");
+                 frutas = Console.ReadLine();
+            }
+            
+            string[] vet = frutas.Split(' ');
+            string f1 = vet[0];
+            string f2 = vet[1];
+            string f3 = vet[2];
+            Console.WriteLine($"Olá {nome}", "As frutas em ordem são:");
+            Console.WriteLine("1:" + f1);
+            Console.WriteLine("2:" + f2);
+            Console.WriteLine("3:" + f3);
+
+
             // Pausa para não fechar o terminal imediatamente
             Console.ReadKey();
         }
