@@ -65,3 +65,8 @@ namespace PrimeiroFundamento
 // nunca pode criar variaveis com numeros no inicio se colocar entao deve usar _ antes
 
 // padrão camel case esse é o padrão
+
+
+
+// para indicar valores float colocar sempre o f ex: altura = 1f para 1.0 (ponto flutuante )
+// quando duble colocar .0 
