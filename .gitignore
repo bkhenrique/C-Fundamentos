@@ -1,0 +1,4 @@
+# Ignorar a pasta .vs e outras pastas desnecessárias
+.vs/
+bin/
+obj/
