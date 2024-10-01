@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Globalization;
 namespace Course
 {
     class Program
@@ -14,12 +14,16 @@ namespace Course
             Console.WriteLine("Digite Sua Idade:");
             int idade = Convert.ToInt32(Console.ReadLine());  // ou int.Parse(Console.ReadLine());
 
+            // Entrada da idade, convertendo string para int
+            Console.WriteLine("Digite Sua Altura:");
+            double altura = Double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);  // ou int.Parse(Console.ReadLine());
+
             // Entrada da frase
             Console.WriteLine("Digite uma Frase:");
             string frase = Console.ReadLine();
 
             // Saída usando interpolação de strings
-            Console.WriteLine($"Olá {nome}, você tem {idade} anos. Sua frase é: \"{frase}\"");
+            Console.WriteLine($"Olá {nome}, você tem {idade} anos.Sua altura:(sem F2) {altura}. Sua altura:(com F2) {(altura.ToString("F2", CultureInfo.InvariantCulture))}.  Sua frase é: \"{frase}\"" );
 
 
             // Split , vetor de string separadas por espaço
